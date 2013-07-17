@@ -1,0 +1,152 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+
+}
+
+body {
+  background: url('pretty.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+@font-face
+{
+font-family: LeagueGothic;
+src: url('fonts/LeagueGothic-Regular.otf');
+}
+
+@font-face
+{
+font-family: Cabin;
+src: url('fonts/Cabin-Regular.otf');
+}
+
+@font-face
+{
+font-family: Cabin;
+src: url('fonts/Cabin-SemiBold.otf');
+font-weight: bold;
+}
+
+
+body {
+font-family: Cabin;
+font-size: 20px;
+}
+
+a:link{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+p{
+    text-align: center;
+}
+
+h1{
+    font-family: LeagueGothic;
+    font-size: 50px;
+    color:#D66389;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 30px;
+}
+
+h2{
+    font-family: Cabin;
+    font-size: 30px;
+    color:#5C5255;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 35px;
+}
+
+
+#container {
+position: relative;
+width: 800px;
+}
+
+#div1, #div2 {
+position: absolute;
+width: 400px;
+margin-top: 15px;
+}
+
+#fields{
+    position:relative;
+    right:60px;
+}
+
+#div2 {
+left: 400px;
+}
+
+legend{
+    margin-left: 105px;
+}
+
+#vote{
+    position:relative;
+    margin-top: 275px;
+    margin-left: 190px;
+}
+
+#buttonpos, #resultbutton, #repeatbutton, #byebutton {
+    margin:auto;
+}
+
+#final{
+    text-align: center;
+    padding-top: 10px;
+}
+
+#all{
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 30px;
+    margin-top: 20px;
+    background-color:#ffffff;
+    border:1px solid black;
+    opacity:0.8;
+    filter:alpha(opacity=60);
+    text-align: center;
+}
+
+.button { display: inline-block;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #DF81F2 ;
+    text-shadow: 0 -1px 1px #565656;
+    -webkit-border-radius: 7px; border-radius: 7px;
+    -webkit-box-shadow: 0 1px 3px 0 #565656; box-shadow: 0 1px 3px 0 #565656;
+}
+
+.button:hover { background-color: #1A0F1C; }
+
+
+#thanks {
+    display: none;
+    text-align: center;
+}

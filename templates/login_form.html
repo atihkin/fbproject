@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Login to Fbsocial</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="/static/fbsocial/login_form.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/fbsocial/login_form.css">
+</head>
+
+<body>
+<div id="all">
+    <div id="fb-root"></div>
+
+    <!--
+      Below we include the Login Button social plugin. This button uses the JavaScript SDK to
+      present a graphical Login button that triggers the FB.login() function when clicked.
+
+      Learn more about options for the login button plugin:
+      /docs/reference/plugins/login/ -->
+    <h1>FBSOCIAL: ARE YOU POPULAR?
+        <a href="http://www.twitter.com/"><img src="/static/fbsocial/glyphicons_411_twitter.png"/> </a>
+        <a href="http://www.facebook.com/"><img src="/static/fbsocial/glyphicons_410_facebook.png"/> </a>
+    </h1>
+
+    <p>
+        <fb:login-button autologoutlink="true" size="medium" onlogin="require('./log').info('onlogin callback')">
+            Login to use Fbsocial
+        </fb:login-button>
+    </p>
+
+
+    <h2></h2>
+
+    <h3></h3>
+
+    <div id="container">
+
+        <div id="div1"></div>
+        <div id="div2"></div>
+
+    </div>
+
+    <div id="vote">
+        <form action="/vote/" method="post">
+            {% csrf_token %}
+            <fieldset id="fields">
+                <legend> Choose Friend</legend>
+                <input type="hidden" name="voter" id="voter" value=""/>
+                <input type="hidden" name="contestant1" id="contestant1" value=""/>
+                <input type="hidden" name="contestant2" id="contestant2" value=""/>
+                <input type=radio name=winner id="friend1" value=""/><label for="friend1"></label>
+                <input type=radio name=winner id="friend2" value=""/><label for="friend2"></label>
+
+                <div id="buttonpos"><input type="submit" class="button" value="Let's find out!"/></div>
+
+            </fieldset>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>
